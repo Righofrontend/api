@@ -9,6 +9,30 @@ button{
     border-radius: 5px;
     box-shadow: inset #eee;
 } */
+
+.titulo {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    font-size: 20px !important;
+    text-align: center;
+}
+
+.subtitulo {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    font-size: 18px !important;
+    text-align: center;
+
+}
+
+.container-md {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+header {}
+
 #poke-container {
     width: 100%;
 }
@@ -20,15 +44,43 @@ button{
      background-color: black; 
     align-items: center;
 } */
-h1{
+/* h1{
     text-align: center;
-}
+} */
 
-#poke-container{
+#poke-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: repeat(auto-fill, 200px);
+    /* grid-template-columns: minmax(100px, 1fr); */
+    /* grid-template-columns: fit-content(40%); */
+    /* grid-template-columns: minmax(100px, max-content) repeat(auto-fill, 200px) 20%; */
+    /* align-items: center; */
+    grid-gap: 10px;
+    justify-content: center;
 }
 
-img{
-    width: 150px;
+figure {
+    border: 2px solid #E6E6E6;
+    border-radius: 5px;
+    width: 200px;
+    padding: 0;
+    margin: 10px auto;
+}
+
+.img-personaje {
+    width: 100%;
+    display: block;
+    margin: auto;
+
+}
+
+figcaption {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    font-size: 18px !important;
+    text-align: center;
+    margin-top: 10px;
+
 }

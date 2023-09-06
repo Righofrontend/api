@@ -59,6 +59,7 @@ const renderCapitulo = (infoCapitulo) => {
 
     episodioName.innerText = infoCapitulo.name
     episodioImagen.setAttribute("src", infoCapitulo.image)
+    episodioImagen.setAttribute("class", "img-personaje")
     figureContainer.append(episodioImagen, episodioName)
     episodioContainer.append(figureContainer)
 
